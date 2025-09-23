@@ -5,11 +5,10 @@ import ru.bmstu.domain.Student;
 
 public class PersonDemo {
     private Person person;
-    private Student student;
 
     public PersonDemo() {
         this.person = new Person("якоб", "джугашвилли", 17, "+7-123-456-78-90");
-        this.student = new Student("Петр", "Петров", 35, "+7-777-888-99-00",
+        Student student = new Student("Петр", "Петров", 35, "+7-777-888-99-00",
                 "МК", 6);
 
     }
