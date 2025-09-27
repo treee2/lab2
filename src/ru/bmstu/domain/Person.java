@@ -23,20 +23,16 @@ public class Person {
     public String getName() {
         return name;
     }
-
     public String getSurname() {
         return surname;
     }
-
     public int getAge() {
         return age;
     }
-    public void setAge(int age) {
-        this.age = age;
-    }
-    public String getPhone() {
-        return phone;
-    }
+    public String getPhone() {return phone;}
+
+
+    public void setAge(int age) {this.age = age;}
     public void setPhone(String phone) {
         this.phone = phone;
     }

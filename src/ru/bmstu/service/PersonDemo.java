@@ -50,12 +50,15 @@ public class PersonDemo {
 
 
         Student student3 = new Student("Алексей", "Смирнов", 21, "+7-987-654-32-10", "MK4", 4);
-        System.out.println("==== Интерфейс =====\n");
-        student3.dismiss(student3);
+        System.out.println("==== Интерфейс Dismissable через переопределение в StudentDismisser =====\n");
+        StudentDismisser st = new StudentDismisser();
+        st.dismiss(student3);
+
+
 
         Student student4 = new Student("Макар", "Смирнов", 21, "+7-987-654-32-10", "MK6", 1);
         StudentDismisser studentDismisser = new StudentDismisser();
-        studentDismisser.dismiss(student4);
+        studentDismisser.demStudentDismisser(student4);
 
     }
 }
