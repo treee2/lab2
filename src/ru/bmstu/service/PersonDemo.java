@@ -53,8 +53,9 @@ public class PersonDemo {
         System.out.println("==== Интерфейс Dismissable через переопределение в StudentDismisser =====\n");
         StudentDismisser st = new StudentDismisser();
         st.dismiss(student3);
-
-
+        // простой человек \
+        Person perl = new Person("Геннадий", "Ермаков", 33, "+7-987-654-32-10");
+        st.dismiss(perl);
 
         Student student4 = new Student("Макар", "Смирнов", 21, "+7-987-654-32-10", "MK6", 1);
         StudentDismisser studentDismisser = new StudentDismisser();
