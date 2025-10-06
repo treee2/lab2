@@ -1,6 +1,5 @@
 package ru.bmstu;
 
-import ru.bmstu.domain.Person;
 import ru.bmstu.service.PersonDemo;
 
 //TIP Чтобы <b>запустить</b> код, нажмите <shortcut actionId="Run"/> или

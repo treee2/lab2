@@ -47,12 +47,12 @@ public class Person {
         // Удаляем все пробелы и дефисы для проверки
         String cleanPhone = phone.replaceAll("[\\s-]", "");
 
-        // Проверка что номер содержит только цифры и знак +
+        // Проверка, что номер содержит только цифры и знак +
         if (!cleanPhone.matches("^\\+?[0-9]+$")) {
             throw new InvalidPhoneNumberException("Номер телефона может содержать только цифры и знак +");
         }
 
-        // Проверка  номера (от 10 до 15 цифр)-длина
+        // Проверка номера (от 10 до 15 цифр)-длина
         String digitsOnly = cleanPhone.replace("+", "");
         if (digitsOnly.length() < 10 || digitsOnly.length() > 15) {
             throw new InvalidPhoneNumberException("Номер телефона должен содержать от 10 до 15 цифр");
