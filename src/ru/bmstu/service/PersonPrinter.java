@@ -19,7 +19,6 @@ public final class PersonPrinter {
     }
 
     // Выводит только ФИО (для совместимости со старым кодом)
-
     public static void printFI(Person person) {
         System.out.println(person.getFirstName() + " " + person.getSecondName());
     }
